@@ -28,6 +28,8 @@ import { ShadowComponent } from './css/shadow/shadow.component';
 import { Profile1Component } from './profile/profile1/profile1.component';
 import { HelpComponent } from './help/help.component';
 import { GroupsComponent } from './groups/groups.component';
+import { PackagesComponent } from './packages/packages.component';
+import { DocumentsComponent } from './documents/documents.component';
 
 
 @NgModule({
@@ -63,6 +65,8 @@ import { GroupsComponent } from './groups/groups.component';
     Profile1Component,
     HelpComponent,
     GroupsComponent,
+    PackagesComponent,
+    DocumentsComponent,
 
   ],
   exports: [

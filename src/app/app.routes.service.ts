@@ -8,6 +8,8 @@ import { ModuleWithProviders } from '@angular/core';
 import { NotFoundComponent } from './views/errors/not-found/not-found.component';
 import { Dashboard1Component } from './views/dashboards/dashboard1/dashboard1.component';
 import { GroupsComponent } from './views/groups/groups.component';
+import { PackagesComponent } from './views/packages/packages.component';
+import { DocumentsComponent } from './views/documents/documents.component';
 
 
 const routes: Route[] = [
@@ -20,6 +22,16 @@ const routes: Route[] = [
   { path: 'groups', children:
     [
       { path: 'v1', component: GroupsComponent },
+    ]
+  },
+  { path: 'packages', children:
+    [
+      { path: 'v1', component: PackagesComponent },
+    ]
+  },
+  { path: 'documents', children:
+    [
+      { path: 'v1', component: DocumentsComponent },
     ]
   },
   { path: 'profiles', children:
