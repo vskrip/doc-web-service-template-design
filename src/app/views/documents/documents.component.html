@@ -17,11 +17,26 @@
 
 <div class="row mt-5">
   <div class="col-md-12">
+
     <!--Card-->
     <div class="card card-cascade narrower">
       <!--Card image-->
-      <div class="view gradient-card-header blue darken-2">
-        <h4 class="h4-responsive text-white">Documents</h4>
+      <div class="view gradient-card-header blue darken-2" style="padding:0px;">
+        <h4 class="h4-responsive text-white float-left" style="margin-top:15px; margin-left:15px;">Documents</h4>
+        <!-- Basic dropdown -->
+        <button class="btn btn-primary dropdown-toggle mr-4 float-right" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Packages</button>
+
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Housing</a>
+          <a class="dropdown-item" href="#">Loans</a>
+          <a class="dropdown-item" href="#">Insurance</a>
+          <!--<div class="dropdown-divider"></div>-->
+          <a class="dropdown-item" href="#">Assets</a>
+        </div>
+        <!-- Basic dropdown -->
+        <!-- Add New Group Button -->
+        <button type="button" class="btn btn-primary waves-light float-right" mdbWavesEffect><i class="fa fa-plus">&nbsp;Add Document</i></button>
+        <!-- \Add New Group Button -->
       </div>
       <!--/Card image-->
       <!--Card content-->
@@ -34,9 +49,8 @@
           <thead class="blue-grey lighten-4">
           <tr>
             <th>#</th>
-            <th>Group Icon</th>
-            <th>Group Name</th>
-            <th>Group Description</th>
+            <th>Package Name</th>
+            <th>Document Name</th>
             <th colspan="2">Actions</th>
           </tr>
           </thead>
@@ -46,33 +60,37 @@
           <tbody>
           <tr>
             <th scope="row">1</th>
-            <td><i style="padding:3px;" class="fa fa-home fa-2x primary-color text-white"></i></td>
-            <td><a href="packages/housing">Housing</a></td>
-            <td>This group contains packages with documents, related with house/apartment.</td>
+            <td><a href="packages/housing">House Buying Contract</a></td>
+            <td>
+              <div><i class="fa fa-file-pdf-o">&nbsp;House Transfer Agreement</i></div>
+            </td>
             <td><a><i class="fa fa-edit fa-2x"></i></a></td>
             <td><a><i class="fa fa-trash-o fa-2x"></i></a></td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td><i style="padding:3px;" class="fa fa-money fa-2x info-color text-white"></i></td>
-            <td><a href="packages/loans">Loans</a></td>
-            <td>This group contains packages with loans/credit documents.</td>
+            <td><a href="packages/housing">House Buying Contract</a></td>
+            <td>
+              <div><i class="fa fa-file-pdf-o">&nbsp;Check1</i></div>
+            </td>
             <td><a><i class="fa fa-edit fa-2x"></i></a></td>
             <td><a><i class="fa fa-trash-o fa-2x"></i></a></td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td><i style="padding:3px;" class="fa fa-file-text-o fa-2x  unique-color text-white"></i></td>
-            <td><a href="packages/insurance">Insurance</a></td>
-            <td>This group contains all packages with insurance kind documents.</td>
+            <td><a href="packages/housing">House Buying Contract</a></td>
+            <td>
+              <div><i class="fa fa-file-pdf-o">&nbsp;Backyard Rent Agreement</i></div>
+            </td>
             <td><a><i class="fa fa-edit fa-2x"></i></a></td>
             <td><a><i class="fa fa-trash-o fa-2x"></i></a></td>
           </tr>
           <tr>
             <th scope="row">4</th>
-            <td><i style="padding:3px;" class="fa fa-building-o fa-2x teal text-white"></i></td>
-            <td><a href="packages/assets">Assets</a></td>
-            <td>This group contains packages with documents, related with assets, not placed on others groups.</td>
+            <td><a href="packages/housing">Insurance</a></td>
+            <td>
+              <div><i class="fa fa-file-pdf-o">&nbsp;Insurance License Agreement</i></div>
+            </td>
             <td><a><i class="fa fa-edit fa-2x"></i></a></td>
             <td><a><i class="fa fa-trash-o fa-2x"></i></a></td>
           </tr>
