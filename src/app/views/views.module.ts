@@ -30,6 +30,8 @@ import { HelpComponent } from './help/help.component';
 import { GroupsComponent } from './groups/groups.component';
 import { PackagesComponent } from './packages/packages.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { InboundComponent } from './buckets/inbound/inbound.component';
+import { OutboundComponent } from './buckets/outbound/outbound.component';
 
 
 @NgModule({
@@ -67,6 +69,8 @@ import { DocumentsComponent } from './documents/documents.component';
     GroupsComponent,
     PackagesComponent,
     DocumentsComponent,
+    InboundComponent,
+    OutboundComponent,
 
   ],
   exports: [

@@ -10,6 +10,8 @@ import { Dashboard1Component } from './views/dashboards/dashboard1/dashboard1.co
 import { GroupsComponent } from './views/groups/groups.component';
 import { PackagesComponent } from './views/packages/packages.component';
 import { DocumentsComponent } from './views/documents/documents.component';
+import { InboundComponent } from './views/buckets/inbound/inbound.component';
+import { OutboundComponent } from './views/buckets/outbound/outbound.component';
 
 
 const routes: Route[] = [
@@ -17,6 +19,12 @@ const routes: Route[] = [
   { path: 'dashboards', children:
     [
       { path: 'v1', component: Dashboard1Component },
+    ]
+  },
+  { path: 'buckets', children:
+    [
+      { path: 'inbound', component: InboundComponent },
+      { path: 'outbound', component: OutboundComponent },
     ]
   },
   { path: 'groups', children:
