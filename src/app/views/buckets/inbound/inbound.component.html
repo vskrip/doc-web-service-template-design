@@ -31,85 +31,324 @@
       <!--/Card image-->
 
       <!--Card content-->
-      <div class="card-body">
+      <div class="card-body" id="accordion">
 
-        <!--Table-->
-        <table class="table">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <i class="fa fa-folder-open-o fa-2x"></i>
+            <button class="btn btn-link accordion-row" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <div class="accordion-row-title"><h5>Housing</h5></div>
+            </button>
+          </div>
 
-          <!--Table head-->
-          <thead class="blue-grey lighten-4">
-          <tr>
-            <th>#</th>
-            <th>Doc Type Icon</th>
-            <th>Document Name</th>
-            <th>Doc Extension</th>
-            <th colspan="3">Actions</th>
-          </tr>
-          </thead>
-          <!--Table head-->
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <!--Table-->
+              <table class="table">
 
-          <!--Table body-->
-          <tbody>
-            <tr class="rgba(0, 0, 0, 0.1) rgba-black-slight">
-              <td><i class="fa fa-folder-open-o fa-2x"></i></td>
-              <td colspan="6"><h5>Housing</h5></td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td><i class="fa fa-file-text-o fa-2x"></i></td>
-              <td>
-                <div>House Transfer Agreement</div>
-              </td>
-              <td>TXT</td>
-              <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
-              <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
-              <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td><i class="fa fa-file-word-o fa-2x"></i></td>
-              <td>
-                <div>Rental Application</div>
-              </td>
-              <td>DOC</td>
-              <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
-              <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
-              <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td><i class="fa fa-file-text-o fa-2x"></i></td>
-              <td>
-                <div>Check1</div>
-              </td>
-              <td>TXT</td>
-              <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
-              <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
-              <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td><i class="fa fa-file-text-o fa-2x"></i></td>
-              <td>
-                <div>Contract Revenue</div>
-              </td>
-              <td>GDOC</td>
-              <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
-              <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
-              <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
-            </tr>
-            <tr class="rgba(0, 0, 0, 0.1) rgba-black-slight">
-              <td><i class="fa fa-folder-o fa-2x"></i></td>
-              <td colspan="6"><h5>Loans</h5></td>
-            </tr>
-            <tr class="rgba(0, 0, 0, 0.1) rgba-black-slight">
-              <td><i class="fa fa-folder-o fa-2x"></i></td>
-              <td colspan="6"><h5>Insurance</h5></td>
-            </tr>
-          </tbody>
-          <!--Table body-->
-        </table>
-        <!--Table-->
+                <!--Table head-->
+                <thead class="blue-grey lighten-4">
+                  <tr>
+                    <th>#</th>
+                    <th>Doc Type Icon</th>
+                    <th>Document Name</th>
+                    <th>Doc Extension</th>
+                    <th colspan="3">Actions</th>
+                  </tr>
+                </thead>
+                <!--Table head-->
+
+                <!--Table body-->
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><i class="fa fa-file-text-o fa-2x"></i></td>
+                    <td>
+                      <div>House Transfer Agreement</div>
+                    </td>
+                    <td>TXT</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><i class="fa fa-file-word-o fa-2x"></i></td>
+                    <td>
+                      <div>Rental Application</div>
+                    </td>
+                    <td>DOC</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><i class="fa fa-file-text-o fa-2x"></i></td>
+                    <td>
+                      <div>Check1</div>
+                    </td>
+                    <td>TXT</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td><i class="fa fa-file-text-o fa-2x"></i></td>
+                    <td>
+                      <div>Contract Revenue</div>
+                    </td>
+                    <td>GDOC</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                </tbody>
+                <!--Table body-->
+              </table>
+              <!--Table-->
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <i class="fa fa-folder-o fa-2x"></i>
+            <button class="btn btn-link accordion-row" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              <div class="accordion-row-title"><h5>Loans</h5></div>
+            </button>
+          </div>
+
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <!--Table-->
+              <table class="table">
+
+                <!--Table head-->
+                <thead class="blue-grey lighten-4">
+                  <tr>
+                    <th>#</th>
+                    <th>Doc Type Icon</th>
+                    <th>Document Name</th>
+                    <th>Doc Extension</th>
+                    <th colspan="3">Actions</th>
+                  </tr>
+                </thead>
+                <!--Table head-->
+
+                <!--Table body-->
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><i class="fa fa-file-text-o fa-2x"></i></td>
+                    <td>
+                      <div>House Transfer Agreement</div>
+                    </td>
+                    <td>TXT</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><i class="fa fa-file-word-o fa-2x"></i></td>
+                    <td>
+                      <div>Rental Application</div>
+                    </td>
+                    <td>DOC</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><i class="fa fa-file-text-o fa-2x"></i></td>
+                    <td>
+                      <div>Check1</div>
+                    </td>
+                    <td>TXT</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td><i class="fa fa-file-text-o fa-2x"></i></td>
+                    <td>
+                      <div>Contract Revenue</div>
+                    </td>
+                    <td>GDOC</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                </tbody>
+                <!--Table body-->
+              </table>
+              <!--Table-->
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <i class="fa fa-folder-o fa-2x"></i>
+            <button class="btn btn-link accordion-row" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              <div class="accordion-row-title"><h5>Insurance</h5></div>
+            </button>
+          </div>
+
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              <!--Table-->
+              <table class="table">
+
+                <!--Table head-->
+                <thead class="blue-grey lighten-4">
+                  <tr>
+                    <th>#</th>
+                    <th>Doc Type Icon</th>
+                    <th>Document Name</th>
+                    <th>Doc Extension</th>
+                    <th colspan="3">Actions</th>
+                  </tr>
+                </thead>
+                <!--Table head-->
+
+                <!--Table body-->
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><i class="fa fa-file-text-o fa-2x"></i></td>
+                    <td>
+                      <div>House Transfer Agreement</div>
+                    </td>
+                    <td>TXT</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><i class="fa fa-file-word-o fa-2x"></i></td>
+                    <td>
+                      <div>Rental Application</div>
+                    </td>
+                    <td>DOC</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><i class="fa fa-file-text-o fa-2x"></i></td>
+                    <td>
+                      <div>Check1</div>
+                    </td>
+                    <td>TXT</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td><i class="fa fa-file-text-o fa-2x"></i></td>
+                    <td>
+                      <div>Contract Revenue</div>
+                    </td>
+                    <td>GDOC</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                </tbody>
+                <!--Table body-->
+              </table>
+              <!--Table-->
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <i class="fa fa-folder-o fa-2x"></i>
+            <button class="btn btn-link accordion-row" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <div class="accordion-row-title"><h5>Assets</h5></div>
+            </button>
+          </div>
+
+          <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <!--Table-->
+              <table class="table">
+
+                <!--Table head-->
+                <thead class="blue-grey lighten-4">
+                  <tr>
+                    <th>#</th>
+                    <th>Doc Type Icon</th>
+                    <th>Document Name</th>
+                    <th>Doc Extension</th>
+                    <th colspan="3">Actions</th>
+                  </tr>
+                </thead>
+                <!--Table head-->
+
+                <!--Table body-->
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td><i class="fa fa-file-text-o fa-2x"></i></td>
+                    <td>
+                      <div>House Transfer Agreement</div>
+                    </td>
+                    <td>TXT</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td><i class="fa fa-file-word-o fa-2x"></i></td>
+                    <td>
+                      <div>Rental Application</div>
+                    </td>
+                    <td>DOC</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td><i class="fa fa-file-text-o fa-2x"></i></td>
+                    <td>
+                      <div>Check1</div>
+                    </td>
+                    <td>TXT</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td><i class="fa fa-file-text-o fa-2x"></i></td>
+                    <td>
+                      <div>Contract Revenue</div>
+                    </td>
+                    <td>GDOC</td>
+                    <td><a><i class="fa fa-edit fa-2x" title="Edit Document"></i></a></td>
+                    <td><a><i class="fa fa-share-square-o fa-2x" title="Convert to PDF"></i></a></td>
+                    <td><a><i class="fa fa-trash-o fa-2x" title="Delete Document"></i></a></td>
+                  </tr>
+                </tbody>
+                <!--Table body-->
+              </table>
+              <!--Table-->
+            </div>
+          </div>
+        </div>
+
 
       </div>
       <!--/.Card content-->
