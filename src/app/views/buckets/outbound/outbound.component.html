@@ -25,7 +25,7 @@
       <div class="view gradient-card-header blue darken-2" style="padding:0px;">
         <h4 class="h4-responsive text-white float-left" style="margin-top:15px; margin-left:15px;">Outbound Bucket Documents</h4>
         <!-- Add New Group Button -->
-        <button type="button" class="btn btn-primary waves-light float-right" mdbWavesEffect><i class="fa fa-plus">&nbsp;&nbsp;Assemble Package</i></button>
+        <button type="button" class="btn btn-primary waves-light float-right" data-toggle="modal" data-target="#basicExample" (click)="centralRegular.show()" mdbWavesEffect><i class="fa fa-plus">&nbsp;&nbsp;Assemble Package</i></button>
         <!-- \Add New Group Button -->
       </div>
       <!--/Card image-->
@@ -387,3 +387,46 @@
   </div>
 </div>
 <!--Grid row-->
+
+<!--Assemble Package Modal Form-->
+<div mdbModal #centralRegular="mdb-modal" class="modal fade" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" [config]="{backdrop: true, ignoreBackdropClick: false}">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title w-100" id="myModalLabel">Assemble Package</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="centralRegular.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="md-form">
+          <input mdbInputDirective placeholder="Package Name" type="text" id="form58" class="form-control">
+          <label for="form58">Package</label>
+        </div>
+        <div>
+          <ol>
+            <li>Document 1</li>
+            <li>Document 2</li>
+            <li>Document 3</li>
+          </ol>
+        </div>
+        <div class="md-form">
+          <i class="fa fa-envelope prefix"></i>
+          <input mdbInputDirective type="text" id="form_signer_email_1" class="form-control">
+          <label for="form_signer_email_1">Signer 1 Email</label>
+        </div>
+        <div class="md-form">
+          <i class="fa fa-envelope prefix"></i>
+          <input mdbInputDirective type="text" id="form_signer_email_2" class="form-control">
+          <label for="form_signer_email_2">Signer 2 Email</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm waves-light" data-dismiss="modal" (click)="centralRegular.hide()" mdbWavesEffect>Close</button>
+        <button type="button" class="btn btn-primary btn-sm waves-light" mdbWavesEffect>Create Package</button>
+      </div>
+    </div>
+  </div>
+</div>
+
