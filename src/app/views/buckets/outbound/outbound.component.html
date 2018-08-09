@@ -22,11 +22,24 @@
     <!--Card-->
     <div class="card card-cascade narrower">
       <!--Card image-->
-      <div class="view gradient-card-header blue darken-2" style="padding:0px;">
+      <div class="view gradient-card-header blue darken-2" style="padding:0px; position:unset;">
         <h4 class="h4-responsive text-white float-left" style="margin-top:15px; margin-left:15px;">Outbound Bucket Documents</h4>
         <!-- Add New Group Button -->
         <button type="button" class="btn btn-primary waves-light float-right" data-toggle="modal" data-target="#basicExample" (click)="centralRegular.show()" mdbWavesEffect><i class="fa fa-plus">&nbsp;&nbsp;Assemble Package</i></button>
         <!-- \Add New Group Button -->
+        <!--Basic dropdown-->
+        <!--Dropdown primary-->
+        <div class="dropdown" style="position:unset;">
+          <button class="btn btn-primary dropdown-toggle mr-4 float-right" type="button" id="dropdown_packaged_filter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Package</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">All</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Packaged</a>
+            <a class="dropdown-item" href="#">Non Packaged</a>
+          </div>
+        </div>
+        <!--/Dropdown primary-->
+        <!--/Basic dropdown-->
       </div>
       <!--/Card image-->
 
